@@ -50,7 +50,7 @@ public class Main {
         try (BufferedReader br = new BufferedReader(new FileReader(FILE_NAME))) {
             String line;
             while ((line = br.readLine()) != null) {
-                lineCount = trimSplitRegexMethod(line);
+                lineCount += trimSplitRegexMethod(line);
             }
 
         } catch (FileNotFoundException e) {
